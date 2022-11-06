@@ -5,9 +5,9 @@ const imgPath = isLocal ? '' : projectName;
 function createGame(player1, title1, hour, player2, title2) {
   return `
   <li>
-        <img src="${imgPath}/assets/icon-${player1}.svg" alt="Bandeira do ${player1}" title="${title1}"/>
+        <img src="${imgPath}/assets/icon-${player1}.svg" alt="Bandeira ${title1}" title="${title1}"/>
         <strong>${hour}</strong>
-        <img src="/assets/icon-${player2}.svg" alt="Bandeira da ${player2}" title="${title2}" />
+        <img src="${imgPath}/assets/icon-${player2}.svg" alt="Bandeira ${title1}" title="${title2}" />
   </li>
   `
 }
